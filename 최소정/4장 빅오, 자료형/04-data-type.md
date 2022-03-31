@@ -144,12 +144,12 @@ a == list(a) # True
 
 a is a # True
 a is list(a) # False
-						 # 값은 동일하지만 list로 한 번 더 묶어주면
-						 # 별도의 객체로 복사가 되고 다른 ID를 갖게 됨
+             # 값은 동일하지만 list로 한 번 더 묶어주면
+             # 별도의 객체로 복사가 되고 다른 ID를 갖게 됨
 
 a == copy.deepcopy(a) # True
 a is copy.deepcopy(a) # False
-											# 복사한 결과 또한 값은 같지만 ID는 다름
+                      # 복사한 결과 또한 값은 같지만 ID는 다름
 ```
 
 - 속도
